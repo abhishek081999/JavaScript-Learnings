@@ -35,3 +35,29 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+***********************************************************************
+    // Stack(Premitive)  , Heap (Non Premitive)
+
+//copy by value 
+    let myYoutubeName = "abcdef"
+let anotherName = myYoutubeName
+anotherName = "chaichun"
+
+console.log(myYoutubeName);//abcdef
+console.log(anotherName);//chaichun
+
+//by reference original value
+
+let userOne = {
+    email:"chai@wrerg.com"
+    passbook:657
+}
+
+let userTwo = userOne;
+
+uderOne.email = "bhoi@oui.von"
+
+console.log(userOne.email) //bhoi@oui.von
+console.log(usrTwo.email)  //bhoi@oui.von
